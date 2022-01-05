@@ -1,0 +1,60 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+    
+}
+.text-color{
+    color: rgb(143, 90, 21);
+}
+.intro{
+    display: flex;
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+   
+}
+.child{
+    /* flex-basis: 50%; */
+    width: 50%;
+    padding: 2%;
+
+}
+.child img{
+    width: 100%;
+    border-radius: 50%;
+}
+.hireButton{
+    background-image: linear-gradient(orange, rgb(216, 17, 17));
+    padding: 10px 50px;
+    border-radius: 5%;
+    color: cornsilk;
+    font-weight: 700;
+    text-decoration: none;
+}
+.second{
+    display: flex;
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.experience{
+    background-image: url("images/exp-bg.png");
+    justify-content: space-around;
+}
+.exp{
+    /* background-color: rgb(231, 240, 237); */
+    width: 40%;
+    border-left: 5px solid;
+    border-image: linear-gradient(red, yellow);
+    border-image-slice: 2;
+    box-shadow: 10px 10px 50px;
+    border-radius: 5%;
+    
+
+}
+.header{
+    text-align: center;
+}
