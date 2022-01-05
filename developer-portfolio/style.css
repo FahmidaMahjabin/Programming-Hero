@@ -47,14 +47,17 @@ h1{
 .exp{
     /* background-color: rgb(231, 240, 237); */
     width: 40%;
-    border-left: 5px solid;
+    border: 10px solid;
     border-image: linear-gradient(red, yellow);
-    border-image-slice: 2;
+    border-image-slice: 1;
     box-shadow: 10px 10px 50px;
-    border-radius: 5%;
-    
-
+    border-radius: 10%;
 }
 .header{
     text-align: center;
+}
+.footer{
+    text-align: center;
+    box-shadow: 10px -10px 40px black;
+    height: 100px;
 }
