@@ -4,6 +4,7 @@ body{
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .flexContainer{
     display: flex;
     justify-content: space-between;
@@ -48,13 +49,18 @@ body{
     padding: 2%;
     border-radius: 5%;
     box-shadow: 5px 5px 10px gray;
+    text-decoration: none;
+    color: black;
 }
 .missionImg{
     width: 50%;
     
+    
+    
 }
 .mission{
     background-color: rgb(115, 139, 185);
+    
 }
 .vission{
     background-color: rgb(133, 214, 133);
@@ -67,10 +73,10 @@ body{
     font-size: 40px;
     text-align: center;
 }
-.bgImg{
+/* .bgImg{
     background-image: url("image/exp-bg.png");
     background-repeat: no-repeat;
-}
+} */
 .newLine{
     display: block;
 }
@@ -87,9 +93,63 @@ body{
     
 }
 .horizontal{
-    border-top: 4px dotted gray;
+    border-top: 1px dotted gray;
     margin: 50px 0;
 }
 .margin{
     margin: 50px 0;
 }
+.input{
+    display: block;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    width: 100%;
+    margin: 10px 0;
+}
+.form{
+    
+    width: 40%;
+    padding: 5%;
+}
+@media all and (max-width: 768px) {
+    .flex-item{
+        width: 95%;
+    }
+    .item{
+        width: 90%;
+    }
+    .form{
+        width: 100%;
+    }
+    .input{
+        width: 90%;
+    }
+}
+.formLeft{
+    background-image: linear-gradient(45deg, purple, pink);
+
+}
+.formRight{
+    background-color: honeydew;
+}
+.icon{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: bisque;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.textMuted{
+    color: grey;
+}
+footer{
+    background-color: black;
+    padding: 2%;
+    color: white;
+    margin-top: 5%;
+}
+#redText{
+    color: red;
+}
+
