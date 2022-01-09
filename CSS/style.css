@@ -10,3 +10,81 @@ div{
 div p {
     text-align: justify;
 }
+.room3{
+    width: 50%;
+    border-image: url("css-border-image-original.png");
+    border-image-slice: 33;
+    border: 10px solid ;
+}
+.room3:hover{
+    background-color: tomato;
+}
+.background{
+    background-image: url(dream-bg.png);
+    background-repeat: no-repeat;
+    background-position:60% 5%;
+    background-attachment: fixed;
+}
+#btn:focus{
+    color: tomato;
+
+}
+.input:focus{
+    font-weight: bolder;
+    color: red;
+}
+li:nth-child(2n){
+    color: red;
+    font-size: 20px;
+}
+li:last-child{
+    color: royalblue;
+}
+h1::before{
+    content: " ";
+    width: 5px;
+    height: 30px;
+    background-color: saddlebrown;
+    position: absolute;
+    
+}
+a:focus{
+    font-size: 20px;
+    color: seagreen;
+}
+td, th{
+    border: 2px solid gray;
+    padding: 0 10px;
+    border-collapse: collapse;
+}
+/* table{
+    border-collapse: collapse;
+} */
+nav >ul > li {
+    list-style: none;
+    display: inline;
+    margin: 0 30px;
+    
+}
+nav >ul > li> a{
+    text-decoration: none;
+    color: black;
+    
+
+
+}
+li a:hover{
+    /* background-color: gray; */
+    border-bottom: 6px solid greenyellow;
+}
+
+.dropDown{
+    display: none;
+    position: absolute;
+}
+nav > ul > li:hover  > ul{
+    display: block;
+    
+
+
+}
