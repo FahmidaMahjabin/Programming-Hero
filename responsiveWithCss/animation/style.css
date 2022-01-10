@@ -1,0 +1,50 @@
+.field{
+    margin: 5%;
+    border: 3px solid black;
+    /* background-color: lemonchiffon; */
+}
+.ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: chocolate;
+    left: 1000px;
+    top: -50px;
+    position: relative;
+    /* transition: transform 1s; */
+    animation: ballAnimation 1s linear  infinite alternate;
+
+}
+.bat{
+    /* transition: transform 1s linear 1s; */
+    animation: batAnimation .5s linear .5s infinite ;
+}
+/* .field:hover .bat{
+    transform:rotate(-60deg);
+    transform-origin: left top;
+}
+.field:hover .ball{
+    transform: translateX(-800px);
+} */
+@keyframes batAnimation {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:left top;
+    }
+    100%{
+        transform: rotate(-60deg);
+        transform-origin:left top;
+    }
+}
+@keyframes ballAnimation {
+    0%{
+        transform: translateX(1000px);
+    }
+    50%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translate(1000px, -500px);
+    }
+    
+}
