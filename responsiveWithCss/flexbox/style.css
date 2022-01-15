@@ -1,0 +1,60 @@
+.container{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+}
+.box{
+    border: 2px solid blue;
+    height: 200px;
+    width: 200px;
+}
+.loginContainer{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(165, 132, 132);
+    justify-content: space-evenly;
+    align-items: center;
+}
+input, button {
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 1.2em;
+
+
+}
+button{
+    background-image: linear-gradient(gray, rgb(49, 43, 43));
+    color: honeydew;
+
+}
+nav{
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 5px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navItem{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navItem li{
+    margin: 10px;
+    font-size: 1.3em;
+    list-style: none;
+    
+}
+li a{
+    text-decoration: none;
+    color: black;
+}

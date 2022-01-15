@@ -12,12 +12,12 @@
     top: -50px;
     position: relative;
     /* transition: transform 1s; */
-    animation: ballAnimation 1s linear  infinite alternate;
+    animation: ballAnimation 1s linear  1 alternate;
 
 }
 .bat{
     /* transition: transform 1s linear 1s; */
-    animation: batAnimation .5s linear .5s infinite ;
+    animation: batAnimation .5s linear .5s 1 ;
 }
 /* .field:hover .bat{
     transform:rotate(-60deg);
@@ -44,7 +44,7 @@
         transform: translateX(-800px);
     }
     100%{
-        transform: translate(1000px, -500px);
+        transform: translate(800px, -500px);
     }
     
 }

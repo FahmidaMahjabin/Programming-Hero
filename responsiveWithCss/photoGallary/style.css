@@ -1,0 +1,32 @@
+.item{
+    border: 1px solid black;
+    width: 300px;
+}
+.photo img{
+    width: 100%;
+    overflow: hidden;
+}
+.photoDetail{
+    display: none;
+}
+.item{
+    position: relative;
+    margin: 10px;
+}
+.item:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+    
+}
+.item:hover .photoDetail{
+    display: block;
+    position: absolute;
+    top: 0;
+    color: blanchedalmond;
+
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
