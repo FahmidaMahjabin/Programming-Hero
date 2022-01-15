@@ -95,6 +95,8 @@ section{
 }
 /* footer */
 footer{
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 50px;
     background-color: rgb(6, 6, 53);
     color: white;
@@ -103,3 +105,31 @@ footer{
 }
 
 /* make it responsive with media query */
+@media screen and (max-width:688px) {
+    .container{
+        flex-direction: column;
+    }
+    .textSection{
+        width: 100%;
+    }
+    .imgSection{
+        width: 100%;
+    }
+    
+    .gallary{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+/* mediam screen */
+@media screen and (min-width:688px) and (max-width:992px) {
+    
+    .gallary{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
