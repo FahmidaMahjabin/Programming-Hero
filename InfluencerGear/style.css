@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:ital,wght@1,500;1,600&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 2.5em;
+    background-color: lightblue;
+}
+/* style for first section  */
+section{
+    margin-top: 50px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.textSection{
+    flex-basis: 45%;
+}
+.imgSection{
+    flex-basis: 45%;
+}
+#camera{
+    transition: transform 5s linear;
+}
+#camera:hover{
+    transform: scale(1.5) rotate(10deg);
+
+
+}
+.bookingBtn{
+    background-color: red;
+    padding: 10px 40px;
+    border-radius: 520px;
+    color: seashell;
+    font-weight: 700;
+}
+.arrow{
+    margin-left: 10px;
+}
+
+/* style for collection section */
+.textCenter{
+    text-align: center;
+}
+.gallary{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgb(133, 126, 126);
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.productImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+.ratingText{
+    margin-left: 20px;
+}
+.fill{
+    color: rgb(179, 142, 76);
+}
+.empty{
+    color: gray;
+}
+.ratingText{
+    color: rgb(61, 60, 60)
+    ;
+    font-size: 12px;
+}
+.smallText{
+    color: rgb(88, 85, 85);
+    font-size: 10px;
+}
+#seeMore{
+    margin-top: 50px;
+    text-align: end;
+}
+#extension{
+    color: red;
+    text-decoration: none;
+    
+}
+/* footer */
+footer{
+    margin-top: 50px;
+    background-color: rgb(6, 6, 53);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* make it responsive with media query */
