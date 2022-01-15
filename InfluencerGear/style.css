@@ -123,6 +123,14 @@ footer{
 
     
 }
+/* subscription */
+#email{
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1.4em;
+
+}
 
 /* mediam screen */
 @media screen and (min-width:688px) and (max-width:992px) {
