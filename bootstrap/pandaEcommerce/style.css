@@ -28,6 +28,14 @@
     background-image: url("images/background/gradient.jpeg");
     background-repeat: no-repeat;
 }
+.product{
+    transition: transform 1s linear;
+}
+.card:hover .product{
+        transform: rotate(-10deg) scale(1.1);
+    
+    
+}
 .backPack{
     background-image: url("images/background/pexels-photo-952670.jpeg");
 }
