@@ -1,32 +1,10 @@
-/* h1::after{
-    content: "Web Developer";
-    color: red;
-    font-size: 50px;  
-    /* animation: changeText 10s linear  1;   */
-/* } 
-/* try animation to change content text in h1 tag in 3/4 different text */
-@keyframes changeText{
-    0% {
-        h1::after {
-            content: "Web Developer";
-            color: red;
-            font-size: 50px;
-        }
-    }
-    50% {
-        h1::after{
-            content: "also a Civil Engineer";
-            color: red;
-            font-size: 50px;
-        }
-    }
-    100% {
-        h1::after{
-            content: "Hard Worker";
-            color: red;
-            font-size: 50px;
-        }
-    }
-
+.banner{
+    background-color: grey;
+    width: 100vw;
 }
-
+.bannerLeft{
+    background-color: hotpink;
+}
+.bannerRight{
+    background-color: indigo;
+}
