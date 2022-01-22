@@ -1,0 +1,37 @@
+.searchBtn{
+    width: 60%;
+    
+}
+.bannerContainer{
+    background-color: rgb(228, 199, 203);
+    width: 50%;
+}
+/* style for category */
+.watch{
+    background-color: lightsteelblue;
+}
+.bag{
+    background-image: linear-gradient(pink, rgb(238, 98, 98));
+}
+.shoe{
+    background-color: linen;
+}
+.seeMore{
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    padding: 10px;
+}
+.centerAlign{
+    text-align: center;
+}
+.shoe{
+    background-image: url("images/background/gradient.jpeg");
+    background-repeat: no-repeat;
+}
+.backPack{
+    background-image: url("images/background/pexels-photo-952670.jpeg");
+}
+.subscription{
+    background-color: lightyellow;
+    border-radius: 10%;
+}
