@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Account page</title>
+</head>
+<body>
+    <header>
+        <h1 class = "text-5xl text-semibold text-center">Welcome to the <span class = "text-indigo-500">Honest Bank Account</span></h1>
+    </header>
+    <main>
+        <section>
+            <div class = "grid grid-cols-3 gap-4 m-8 w-4/5 mx-auto">
+                <div class = "bg-green-300 rounded-lg p-8">
+                    <h2 class = "text-3xl">Deposite</h2>
+                    <p id = "showDeposite" class = "text-4xl">0.00</p>
+                </div>
+                <div class = "bg-red-300 rounded-lg p-8">
+                    <h2 class = "text-3xl">Withdraw</h2>
+                    <p id = "showWithdraw" class = "text-4xl">0.00</p>
+                </div>
+                <div class = "bg-yellow-300 rounded-lg p-8">
+                    <h2 class = "text-3xl">Balance</h2>
+                    <p id = "balance" class = "text-4xl">12000</p>
+                </div>
+            </div>
+        </section>
+        <!-- balance deposite and withdraw -->
+        <section class = "m-8  w-4/5 mx-auto grid grid-cols-2 gap-4 ">
+            <!-- add deposite -->
+            <div class = "bg-green-200 p-8 rounded-md">
+                <h2 class = "text-2xl">Please deposite</h2>
+                <input id = "deposite"   placeholder="enter your amount" class = "p-2 block w-1/2 my-2">
+                <button onclick = "addDeposite()" class = "bg-green-500 p-2 rounded-md" type = "button">Deposite</button>
+            </div>
+
+            <!-- add withdraw -->
+            <div class = "bg-red-200 p-8 rounded-md">
+                <h2 class = "text-2xl">Please Withdraw</h2>
+                <input id = "withdraw" onclick = "" placeholder="enter your amount" class = "p-2 block w-1/2 my-2">
+                <button onclick="addWithdraw()" class = "bg-red-500 p-2 rounded-md" type = "button">Withdraw</button>
+            </div>
+
+
+        </section>
+    </main>
+    <script src = "accountPage.js"></script>
+
+    
+</body>
+</html>
