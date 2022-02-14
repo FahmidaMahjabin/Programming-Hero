@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/431701a28e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class = "text-5xl text-center font-bold">Shopping Cart</h1>
+    <main>
+        <section class = m-16>
+            <div class = "grid grid-rows-1 gap-4 rounded bg-gray-200 rounded ">
+                <div class = "grid grid-cols-5 items-center">
+                    <img src = "images/bags/bag-1.png">
+                    <p class = "text-2xl font-semibold text-red-300">Red Bag</p>
+                    <div>
+                        <button><i id = "plus" onclick = "getQuantity(true)"class="fa-solid fa-plus"></i></button>
+                        <button id = "quantity" class = "bg-gray-400 rounded-lg p-2">1</button>
+                        <button><i id = "minus" onclick="getQuantity(false)" class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <p class = "text-2xl font-semibold">Price</p>
+                        <p>$<span></span></p>
+                    </div>
+                    
+                    <div><i class="text-5xl fa-solid fa-circle-xmark"></i></div>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+    <script src = "js/cart.js"></script>
+</body>
+</html>

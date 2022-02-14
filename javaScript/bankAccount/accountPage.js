@@ -6,7 +6,7 @@
 function addDeposite(){
     let deposite = document.getElementById("deposite").value;
     if (parseFloat(deposite) >= 0){
-        console.log(typeof(deposite))
+        
         document.getElementById("showDeposite").innerText = deposite ; 
         let balance = document.getElementById("balance");
         console.log(balance.innerText)
@@ -16,9 +16,7 @@ function addDeposite(){
         document.getElementById("deposite").value = "";
     }
     else{
-        let paragraph = document.createElement("p");
-        paragraph.innerText = "please enter valid amount";
-        document.getElementById("depoSection").appendChild(paragraph);
+        showWarning("depoSection");
         
     }
     
@@ -39,11 +37,18 @@ function addWithdraw(){
         document.getElementById("withdraw").value = "";
     }
     else{
-        let paragraph = document.createElement("p");
-        paragraph.innerText = "please enter valid amount for withdraw";
-        document.getElementById("withdrawSection").appendChild(paragraph);
+        showWarning("withdrawSection")
+        
         
     }
     
     
+}
+
+function showWarning(id){
+    let paragraph = document.createElement("p");
+    paragraph.innerText = "please enter valid amount for withdraw";
+    document.getElementById(id).appendChild(paragraph);
+    // paragraph.innerText = "";
+
 }
