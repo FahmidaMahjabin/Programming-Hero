@@ -12,18 +12,50 @@
     <h1 class = "text-5xl text-center font-bold">Shopping Cart</h1>
     <main>
         <section class = m-16>
-            <div class = "grid grid-rows-1 gap-4 rounded bg-gray-200 rounded ">
-                <div class = "grid grid-cols-5 items-center">
+            <div class = "grid grid-rows-3  ">
+                <div class = "grid grid-cols-5 items-center rounded bg-gray-200">
                     <img src = "images/bags/bag-1.png">
                     <p class = "text-2xl font-semibold text-red-300">Red Bag</p>
                     <div>
-                        <button><i id = "plus" onclick = "getQuantity(true)"class="fa-solid fa-plus"></i></button>
-                        <button id = "quantity" class = "bg-gray-400 rounded-lg p-2">1</button>
-                        <button><i id = "minus" onclick="getQuantity(false)" class="fa-solid fa-minus"></i></button>
+                        <button><i id = "plus" onclick = "getQuantityandPrice(true, 'redBag')"class="fa-solid fa-plus"></i></button>
+                        <button id = "redBag" class = "bg-gray-400 rounded-lg p-2">1</button>
+                        <button><i id = "minus" onclick="getQuantityandPrice(false, 'redBag', 100)" class="fa-solid fa-minus"></i></button>
                     </div>
                     <div>
                         <p class = "text-2xl font-semibold">Price</p>
-                        <p>$<span></span></p>
+                        <p>$<span id = "showPrice">100</span></p>
+                    </div>
+                    
+                    <div><i class="text-5xl fa-solid fa-circle-xmark"></i></div>
+                </div>
+                <!-- second -->
+                <div class = "my-8 grid grid-cols-5 items-center rounded bg-gray-200">
+                    <img src = "images/bags/bag-2.png">
+                    <p class = "text-2xl font-semibold text-red-300">Red Bag</p>
+                    <div>
+                        <button><i id = "plus" onclick = "getQuantityandPrice(true, 'blueBag')"class="fa-solid fa-plus"></i></button>
+                        <button id = "blueBag" class = "bg-gray-400 rounded-lg p-2">1</button>
+                        <button><i id = "minus" onclick="getQuantityandPrice(false, 'blueBag', 200)" class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <p class = "text-2xl font-semibold">Price</p>
+                        <p>$<span id = "showPrice">200</span></p>
+                    </div>
+                    
+                    <div><i class="text-5xl fa-solid fa-circle-xmark"></i></div>
+                </div>
+                <!-- third -->
+                <div class = "my-8 grid grid-cols-5 items-center rounded bg-gray-200">
+                    <img src = "images/bags/bag-3.png">
+                    <p class = "text-2xl font-semibold text-red-300">Red Bag</p>
+                    <div>
+                        <button><i id = "plus" onclick = "getQuantityandPrice(true, 'blackBag')"class="fa-solid fa-plus"></i></button>
+                        <button id = "blackBag" class = "bg-gray-400 rounded-lg p-2">1</button>
+                        <button><i id = "minus" onclick="getQuantityandPrice(false, 'blackBag', 150)" class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <p class = "text-2xl font-semibold">Price</p>
+                        <p>$<span id = "showPrice">150</span></p>
                     </div>
                     
                     <div><i class="text-5xl fa-solid fa-circle-xmark"></i></div>
@@ -31,6 +63,13 @@
                 
                 
             </div>
+        </section>
+
+        <section class = "m-16 bg-red-200 rounded">
+            <div class = "grid grid-cols-2">
+
+            </div>
+
         </section>
     </main>
     <script src = "js/cart.js"></script>
